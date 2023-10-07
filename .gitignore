@@ -3,9 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 artifacts/*
+mlruns/*
+
+
+
 # C extensions
 *.so
-
+*.code-workspace
 # Distribution / packaging
 .Python
 build/
