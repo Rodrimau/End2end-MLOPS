@@ -5,7 +5,7 @@ __pycache__/
 artifacts/*
 # C extensions
 *.so
-
+*.code-workspace
 # Distribution / packaging
 .Python
 build/
