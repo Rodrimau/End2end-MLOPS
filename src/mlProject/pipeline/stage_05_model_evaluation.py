@@ -1,11 +1,15 @@
-from mlProject.config.configuration import ConfigurationManager
 from mlProject.components.model_evaluation import ModelEvaluation
+from mlProject.config.configuration import ConfigurationManager
 from mlProject import logger
-
+import os
 STAGE_NAME = "Model Evaluation stage"
 
 class ModelEvaluationTrainingPipeline:
     
+    os.environ["MLFLOW_TRACKING_URI"] = "https://dagshub.com/Rodrimau/End2end-MLOPS.mlflow"
+    os.environ["MLFLOW_TRACKING_USERNAME"]="Rodrimau"
+    os.environ["MLFLOW_TRACKING_PASSWORD"]="d6ad768d9908cf40e554cdeec0adcd1c1fa95423"
+        
     def __init__(self) -> None:
         pass
 
